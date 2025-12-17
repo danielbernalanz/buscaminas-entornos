@@ -16,8 +16,7 @@ public class Tablero {
 		this.numMinas = numMinas;
 		this.numFilas = numFilas;
 		this.numColumnas = numColumnas;
-		
-		tablero = new Casilla[numFilas][numColumnas];
+		crearTableroVacio();
 	}
 
 	/*
@@ -32,8 +31,14 @@ public class Tablero {
 	 * Este metodo añadirá minas de forma aleatoria y calculará los números de cada
 	 * casilla en función de las minas que haya en las casillas de alrededores.
 	 */
+
+	public void crearTableroVacio() {
+		tablero = new Casilla[numFilas][numColumnas];
+
+	}
+
 	public void inicializarTablero() {
-		
+
 	}
 
 }

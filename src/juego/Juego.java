@@ -12,11 +12,22 @@ public class Juego {
 	}
 
 	public boolean descubrirCasilla() {
+		boolean tieneMina = false;
+		boolean tieneNumero = false;
+		if (tieneMina) {
+			// Mostrar minas
+			// Terminar juego
+		} else if (tieneNumero) {
+			// Mostrar número de minas adyacentes
+		} else {
+			// Descubrir automáticamente el área de casillas blancas adyacentes
+		}
+
 		return true;
 	}
 
 	public void ponerBandera() {
-
+		
 	}
 
 	public void quitarBandera() {

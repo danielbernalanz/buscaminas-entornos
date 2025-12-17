@@ -7,8 +7,6 @@ public class Casilla {
 	private boolean visible;
 	private int numero;
 
-	
-
 	public int getNumero() {
 		return numero;
 	}
@@ -49,4 +47,10 @@ public class Casilla {
 		this.bandera = bandera;
 	}
 
+	// Mostrar únicamente el símbolo correspondiente según la lógica de la casilla
+
+	public String toString() {
+		return "Casilla [mina=" + mina + ", blanco=" + blanco + ", bandera=" + bandera + ", visible=" + visible
+				+ ", numero=" + numero + "]";
+	}
 }
