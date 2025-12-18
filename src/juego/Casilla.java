@@ -50,7 +50,21 @@ public class Casilla {
 	// Mostrar únicamente el símbolo correspondiente según la lógica de la casilla
 
 	public String toString() {
-		return "Casilla [mina=" + mina + ", blanco=" + blanco + ", bandera=" + bandera + ", visible=" + visible
-				+ ", numero=" + numero + "]";
+		if(!isVisible()) {
+			return ".";
+		}
+		if (getNumero()>0) {
+			return String.valueOf(getNumero());
+		}
+		if(isBlanco()) {
+			return "";
+		}
+		if(isMina()) {
+			return "M";
+		}
+		if(isBandera()) {
+			return "B";
+		}
+		return "?";
 	}
 }
