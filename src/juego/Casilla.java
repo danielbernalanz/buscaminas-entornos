@@ -54,7 +54,7 @@ public class Casilla {
 			return ".";
 		}
 		if (getNumero()>0) {
-			return "" + getNumero();
+			return String.valueOf(getNumero());
 		}
 		if(isBlanco()) {
 			return "";
@@ -65,6 +65,6 @@ public class Casilla {
 		if(isBandera()) {
 			return "B";
 		}
-		return null;
+		return "?";
 	}
 }
