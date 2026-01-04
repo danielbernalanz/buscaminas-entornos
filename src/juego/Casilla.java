@@ -50,21 +50,18 @@ public class Casilla {
 	// Mostrar únicamente el símbolo correspondiente según la lógica de la casilla
 
 	public String toString() {
-		if(!isVisible()) {
-			return ".";
-		}
-		if (getNumero()>0) {
-			return String.valueOf(getNumero());
-		}
-		if(isBlanco()) {
-			return "";
-		}
-		if(isMina()) {
-			return "M";
-		}
-		if(isBandera()) {
-			return "B";
-		}
-		return "?";
+	    if (isBandera()) {
+	        return "B";
+	    }
+	    if (!isVisible()) {
+	        return ".";
+	    }
+	    if (isMina()) {
+	        return "M";
+	    }
+	    if (numero > 0) {
+	        return String.valueOf(numero);
+	    }
+	    return " ";
 	}
 }
